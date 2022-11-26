@@ -7,7 +7,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "standard-with-typescript",
-    "prettier"
+    "prettier",
   ],
   overrides: [],
   parserOptions: {
@@ -21,16 +21,18 @@ module.exports = {
     "react/jsx-indent": ["error", 2],
     "react/jsx-indent-props": ["error", 2],
     "react/jsx-closing-tag-location": 2,
-    "react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
-    "react/jsx-wrap-multilines": ["error", {
-      "declaration": "parens-new-line",
-       "assignment": "parens-new-line",
-       "return": "parens-new-line",
-       "arrow": "parens-new-line",
-       "condition": "parens-new-line",
-       "logical": "parens-new-line",
-       "prop": "parens-new-line"
-     },
-   ]
+    "react/jsx-one-expression-per-line": ["error", { allow: "single-child" }],
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        declaration: "parens-new-line",
+        assignment: "parens-new-line",
+        return: "parens-new-line",
+        arrow: "parens-new-line",
+        condition: "parens-new-line",
+        logical: "parens-new-line",
+        prop: "parens-new-line",
+      },
+    ],
   },
 };
